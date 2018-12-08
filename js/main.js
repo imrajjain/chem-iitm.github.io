@@ -1,6 +1,3 @@
-
-
-
 function postContactToGoogle() {
     var rqst=$('#rqst').val();
     
