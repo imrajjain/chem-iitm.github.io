@@ -5,6 +5,6 @@ function postContactToGoogle() {
     var rqst=$('#rqst').val();
     
     $.ajax({
-    url:"https://docs.google.com/forms/d/e/1FAIpQLSfEZXpSmTbps38ODxLMzHFPy8PZpbE87icHND6wmjSlGQDv-w/formResponse", data:{"entry.259469016":rqst},type:"POST",dataType:"xml",statusCode: {0:function(){window.alert("Your request has been submitted successfully");},0:function() { window.location.replace("index.html");},200:function(){window.location.replace("index.html");}}
+    url:"https://docs.google.com/forms/d/e/1FAIpQLSfEZXpSmTbps38ODxLMzHFPy8PZpbE87icHND6wmjSlGQDv-w/formResponse", data:{"entry.259469016":rqst},type:"POST",dataType:"xml",statusCode: {0:function(){alert("Your request has been submitted successfully");},0:function() { window.location.replace("index.html");},200:function(){window.location.replace("index.html");}}
     });
     }
