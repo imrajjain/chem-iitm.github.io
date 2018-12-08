@@ -9,6 +9,8 @@
     <meta name="author" content="Raj Jain">
     <title>Chem IITM | Home</title>
     <link rel="stylesheet" href="./css/style.css">
+    <script src="./main.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 </head>
 
 <body>
@@ -40,8 +42,8 @@
         <div class="container">
             <h1>Request to add study material.</h1>
             <form>
-                <input type="text" placeholder="Enter your wish here">
-                <button type="submit" class="button_1">Submit</button>
+                <input type="text" id="rqst" name="rqst" placeholder="Enter your wish here">
+                <button type="submit" name="Submit" value="Submit" onclick="postContactToGoogle()" id="submit" class="button_1">Submit</button>
             </form>
         </div>
     </section>
