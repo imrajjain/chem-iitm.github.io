@@ -8,12 +8,8 @@
     <meta name="author" content="Raj Jain">
     <title>Chem IITM | Downloads</title>
     <link rel="stylesheet" href="./css/style.css">
-    <script>
-        (adsbygoogle = window.adsbygoogle || []).push({
-        google_ad_client: "ca-pub-3621468789984338",
-        enable_page_level_ads: true
-        });
-    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="./js/main.js"></script>
 </head>
 <body>
     <header>
@@ -36,8 +32,8 @@
         <div class="container">
             <h1>Request to add study material.</h1>
             <form>
-                <input type="text" placeholder="Enter your wish here">
-                <button type="submit" class="button_1">Submit</button>
+                <input type="text" id="rqst" name="request" placeholder="Enter your wish here">
+                <button type="submit" name="Submit" value="Submit" onclick="postContactToGoogle()" id="submit" class="button_1">Submit</button>
             </form>
         </div>
     </section>
